@@ -1,21 +1,8 @@
-
-    body {
-      background-image: url("https://images.shopee.com.br/spc/img/banner/99/99-Super-Shopping-Day-Festa-de-Cupons-1662234372.png");   
-
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-      margin: 0;
-    }
-  
-
-
 /* Cores base (substitua pelas cores desejadas) */
 :root {
-  --cor-primaria: #f0c040;  /* Laranja Amazon */
-  --cor-secundaria: #232F34; /* Cinza escuro Amazon */
-  --cor-texto: #333;       /* Cinza texto Amazon */
+  --cor-primaria: #ee4d2d;  /* Vermelho Shopee */
+  --cor-secundaria: #ffffff; /* Branco */
+  --cor-texto: #333;       /* Cinza texto */
 }
 
 /* Layout geral */
@@ -23,13 +10,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: var(--cor-secundaria); /* Use a cor base */
 }
 
 .container {
   max-width: 1024px;
   padding: 20px;
   margin: 0 auto;
+}
+
+/* Estilos do título */
+.display-4 {
+  color: var(--cor-primaria); /* Use a cor base */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 20px;
 }
 
 /* Estilos do card de cupom */
@@ -63,7 +57,7 @@ body {
 }
 
 .btn {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-primaria); /* Use a cor base */
   color: #fff;
   border: none;
   border-radius: 5px;
