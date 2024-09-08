@@ -1,0 +1,27 @@
+.cupom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cupom {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.cupom-codigo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.copiar-botao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
