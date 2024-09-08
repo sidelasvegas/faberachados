@@ -1,29 +1,65 @@
-/* Customize the appearance of your coupons here */
-
-.coupon-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
+/* Cores base (substitua pelas cores desejadas) */
+:root {
+  --cor-primaria: #f0c040;  /* Laranja Amazon */
+  --cor-secundaria: #232F34; /* Cinza escuro Amazon */
+  --cor-texto: #333;       /* Cinza texto Amazon */
 }
 
-.coupon-card .card-title {
-    font-weight: bold;
-}
-
-.coupon-card .btn-primary {
-    background-color: # оранже; /* Customize button color (orange in hex) */
-    border-color: # оранже;
-}
-
-/* Remove unnecessary margins from Bootstrap (optional) */
+/* Layout geral */
 body {
-    margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 .container {
-    padding: 20px;
+  max-width: 1024px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.coupon-title {
-    font-size: 18px;
-    font-weight: bold;
+/* Estilos do card de cupom */
+.coupon-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coupon-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--cor-primaria);
+  opacity: 0.8;
+}
