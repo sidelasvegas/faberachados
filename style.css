@@ -1,3 +1,16 @@
+
+    body {
+      background-image: url("https://images.shopee.com.br/spc/img/banner/99/99-Super-Shopping-Day-Festa-de-Cupons-1662234372.png");   
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+
+
 /* Cores base (substitua pelas cores desejadas) */
 :root {
   --cor-primaria: #f0c040;  /* Laranja Amazon */
