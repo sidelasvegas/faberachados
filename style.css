@@ -1,8 +1,8 @@
-/* Cores base (substitua pelas cores desejadas) */
+/* Cores base da Shopee */
 :root {
-  --cor-primaria: #ee4d2d;  /* Vermelho Shopee */
+  --cor-primaria: #ee4d2d; /* Laranja Shopee */
   --cor-secundaria: #ffffff; /* Branco */
-  --cor-texto: #333;       /* Cinza texto */
+  --cor-texto: #333; /* Cinza */
 }
 
 /* Layout geral */
@@ -10,63 +10,44 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--cor-secundaria); /* Use a cor base */
+  background-color: var(--cor-secundaria); /* Fundo branco */
 }
 
+/* Container principal */
 .container {
-  max-width: 1024px;
-  padding: 20px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-/* Estilos do título */
-.display-4 {
-  color: var(--cor-primaria); /* Use a cor base */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-  margin-bottom: 20px;
+/* Título principal */
+.titulo-principal {
+  color: var(--cor-primaria);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Estilos do card de cupom */
-.coupon-card {
-  background-color: #fff;
+/* Card de cupom */
+.card {
+  background-color: var(--cor-secundaria);
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-.coupon-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-}
-
-.card-body {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  text-align: center;
 }
 
-.card-title {
-  font-size: 18px;
-  color: var(--cor-texto);
-  margin-bottom: 10px;
-}
-
-.card-text {
-  color: var(--cor-texto);
-  margin-bottom: 15px;
-}
-
+/* Botão */
 .btn {
-  background-color: var(--cor-primaria); /* Use a cor base */
+  background-color: var(--cor-primaria);
   color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: var(--cor-primaria);
-  opacity: 0.8;
+  background-color: darken(var(--cor-primaria), 10%);
 }
